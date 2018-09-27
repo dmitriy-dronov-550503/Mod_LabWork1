@@ -3,5 +3,5 @@
 
 # Except this
 !.gitignore
-!*.h
-!*.cpp
+!Mod_LabWork1/
+!Mod_LabWork1/*

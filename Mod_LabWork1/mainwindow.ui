@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>558</width>
+    <height>444</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Uniform distribution</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="2,8,1">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,2,0,2,0,0,0">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>R=</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="rLineEdit">
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>m=</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="mLineEdit">
+        <property name="text">
+         <string>5</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>a=</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="aLineEdit">
+        <property name="text">
+         <string>3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Calculate</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QCustomPlot" name="histogram" native="true"/>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,0,2,0,2,0,2">
+        <item>
+         <widget class="QLabel" name="ExpressLabel">
+          <property name="text">
+           <string>Expess</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="mEq_Label">
+          <property name="styleSheet">
+           <string notr="true">color: red;</string>
+          </property>
+          <property name="text">
+           <string>m =</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="mExpressLabel">
+          <property name="text">
+           <string>0.000</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="dEq_Label">
+          <property name="styleSheet">
+           <string notr="true">color: blue;</string>
+          </property>
+          <property name="text">
+           <string>D =</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="dExpressLabel">
+          <property name="text">
+           <string>0.000</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="sigmaEq_Label">
+          <property name="styleSheet">
+           <string notr="true">color: green;</string>
+          </property>
+          <property name="text">
+           <string>σ =</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="sigmaExpressLabel">
+          <property name="text">
+           <string>0.000</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,0,2,0,2,0,2">
+        <item>
+         <widget class="QLabel" name="StandardLabel">
+          <property name="text">
+           <string>Standard</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="mEq_Label2">
+          <property name="styleSheet">
+           <string notr="true">color: red;</string>
+          </property>
+          <property name="text">
+           <string>m =</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="mStandardLabel">
+          <property name="text">
+           <string>0.000</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="dEq_Label2">
+          <property name="styleSheet">
+           <string notr="true">color: blue;</string>
+          </property>
+          <property name="text">
+           <string>D =</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="dStandardLabel">
+          <property name="text">
+           <string>0.000</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="sigmaEq_Label2">
+          <property name="styleSheet">
+           <string notr="true">color: green;</string>
+          </property>
+          <property name="text">
+           <string>σ =</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="sigmaStandardLabel">
+          <property name="text">
+           <string>0.000</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="1,0,2,0,2,0,2,0,2">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Testing</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="indEq_Label">
+          <property name="styleSheet">
+           <string notr="true">color:  brown;</string>
+          </property>
+          <property name="text">
+           <string>Inderect =</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="indirectLabel">
+          <property name="text">
+           <string>0.0000</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="pi4Eq_Label">
+          <property name="styleSheet">
+           <string notr="true">color:  brown;</string>
+          </property>
+          <property name="text">
+           <string>π/4 =</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="piDiv4Label">
+          <property name="text">
+           <string>0.0000</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="pEq_Label">
+          <property name="styleSheet">
+           <string notr="true">color:  brown;</string>
+          </property>
+          <property name="text">
+           <string>P =</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="PLabel">
+          <property name="text">
+           <string>0000</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="LEq_Label">
+          <property name="styleSheet">
+           <string notr="true">color:  brown;</string>
+          </property>
+          <property name="text">
+           <string>L =</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="LLabel">
+          <property name="text">
+           <string>0000</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
